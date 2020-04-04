@@ -11,13 +11,12 @@ const validateLoginInput = require('../../validation/login');
 
 const router = express.Router();
 
-
 router.get("/test", (req, res) => {
     res.json({ msg: "this is the user route" });
 });
 
+router.post("/register", (req, res) => {
 
-router.get('register', (req, res) => {
     const { errors, isValid } = validateRegisterInput(req.body);
 
     if (!isValid) {
@@ -31,7 +30,9 @@ router.get('register', (req, res) => {
         } else {
             const newUser = new User({
                 email: req.body.email,
-                password: req.body.password
+                password: req.body.password,
+                phone: req.body.phone,
+                nationality: req.body.nationality
             });
 
             bcrypt.genSalt(10, (err, salt) => {
@@ -41,7 +42,7 @@ router.get('register', (req, res) => {
                     newUser
                         .save()
                         .then(user => {
-                            const payload = { id: user.id, email: user.email, nationality: user.nationality, phone: user.phone };
+                            const payload = { id: user.id, email: user.email };
 
                             jwt.sign(payload, keys.secretOrKey, { expiresIn: 3600 }, (err, token) => {
                                 res.json({
