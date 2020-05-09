@@ -1,0 +1,99 @@
+
+.nav-wrapper {
+    width: 100%;
+    background: #fff;
+    z-index: 9996;
+    color: #6e6d7a;
+    position: fixed;
+    top: 0;
+}
+
+.nav-wrapper .nav-inner{
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: inset 0px -1px 0px #f3f3f4;
+}
+
+.nav-logo {
+    padding-right: 20px;
+}
+
+#logo>a>img{
+    height: 80px;
+}
+
+.main-nav {
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.nav-wrapper span{
+    transition: color 100ms;
+}
+
+.main-nav .links-container,
+.main-nav .actions-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-nav .links-container > li.tab-link,
+.main-nav .actions-container > li.actions-item{
+    padding-right: 20px;
+}
+
+.links-container .actions-item,
+.actions-container .actions-item{
+    font-size: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 16px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    transition: all 200ms ease;
+    border-radius: 8px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: relative;
+    outline: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 20px;
+    height: 40px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.btn-logout,
+.btn-signup {
+    background-color: rgb(161, 102, 216);
+    color: white;
+}
+
+
+
+@media (min-width: 920px){
+    .nav-wrapper{
+        position: static;
+        height: 80px;
+        will-change: initial;
+    }
+    .nav-wrapper .nav-inner{
+        display: flex;
+        padding: 0 30px;
+    }
+    .main-nav {
+        height: inherit;
+        overflow: visible;
+    }
+}
