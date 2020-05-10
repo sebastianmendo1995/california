@@ -1,6 +1,10 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
+import logo from '../assets/images/logo.jpeg'
+import artwork from '../assets/images/artwork.jpg'
+import './session.css'
+
 class SignupForm extends React.Component {
     constructor(props) {
         super(props);
@@ -58,7 +62,20 @@ class SignupForm extends React.Component {
 
     render() {
         return (
-            <div className="signup-form-container">
+            <div className="main-container">
+                <section className="auth-sidebar">
+                    <div className="auth-sidebar-content">
+                        <header>
+                            <a href="/" className='logo'>
+                                <img src={logo} alt=""/>
+                            </a>
+                            <h1>Unete a nuestra pagina y encuentra descuentos en tu proxima reserva</h1>
+                        </header>
+                        <div className="artwork">
+                            <img src={artwork} alt=""/>
+                        </div>
+                    </div>
+                </section>
                 <form onSubmit={this.handleSubmit}>
                     <div className="signup-form">
                         <br />
