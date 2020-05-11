@@ -1,18 +1,80 @@
 
+.auth-sidebar header {
+    margin: 0 auto;
+    max-width: 416px;
+    padding: 48px 20px 0;
+    text-align: left;
+}
 
+header {
+    display: block;
+}
 
+.auth-sidebar .artwork {
+    display: none;
+}
 
+.auth-sidebar header {
+    margin: 0 auto;
+    max-width: 416px;
+    padding: 48px 20px 0;
+    text-align: left;
+}
+
+.auth-sidebar .artwork .artwork-image {
+    background-image: url('../assets/images/artwork.jpg');
+    flex-grow: 1;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+.auth-sidebar header h1 {
+    display: block;
+    padding-right: 30px;
+}
+
+.auth-sidebar-content header h1 {
+    color: inherit;
+    display: none;
+    font: bold 32px/38px "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'Balsamiq Sans', cursive;
+}
 
 @media (min-width: 960px) {
     #main-container {
         height: 100%;
         display: flex;
-        -ms-flex-direction: row;
         flex-direction: row;
         overflow: hidden;
     }
     .auth-sidebar {
         background: #C1DEE9;
-        color: #1876e2;
+        color: rgb(18, 194, 159);
+    }
+    .auth-sidebar header {
+        max-width: 100%;
+        margin: 0;
+        padding: 40px 40px 30px;
+    }
+
+    .auth-sidebar .auth-sidebar-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    .auth-sidebar .artwork {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        flex-grow: 1;
+    }
+    .auth-sidebar {
+        width: 550px;
+    }
+    .auth-sidebar header h1 {
+        display: block;
+        padding-right: 30px;
     }
 }

@@ -19,7 +19,7 @@
 }
 
 #logo>a>img{
-    height: 80px;
+    height: 70px;
 }
 
 .main-nav {
@@ -76,11 +76,9 @@
 
 .btn-logout,
 .btn-signup {
-    background-color: rgb(161, 102, 216);
+    background-color: #34CFB1;
     color: white;
 }
-
-
 
 @media (min-width: 920px){
     .nav-wrapper{

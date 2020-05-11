@@ -1,8 +1,8 @@
 import React from 'react';
 import { withRouter } from 'react-router-dom';
 
-import logo from '../assets/images/logo.jpeg'
-import artwork from '../assets/images/artwork.jpg'
+import logo from '../assets/images/logo.png'
+// import artwork from '../assets/images/artwork.jpg'
 import './session.css'
 
 class SignupForm extends React.Component {
@@ -62,19 +62,35 @@ class SignupForm extends React.Component {
 
     render() {
         return (
-            <div className="main-container">
+            <div id="main-container">
                 <section className="auth-sidebar">
                     <div className="auth-sidebar-content">
                         <header>
                             <a href="/" className='logo'>
                                 <img src={logo} alt=""/>
                             </a>
-                            <h1>Unete a nuestra pagina y encuentra descuentos en tu proxima reserva</h1>
+                            <h1>Hospedarse en Lima nunca fue tan barato.</h1>
                         </header>
                         <div className="artwork">
-                            <img src={artwork} alt=""/>
+                            <div className="artwork-image"></div>
                         </div>
                     </div>
+                </section>
+                <section className="content">
+                    <nav className="auth-nav">
+                        <p className="auth-link">
+                            Already a member?
+                            <a href="#/login">Log in</a>
+                        </p>
+                    </nav>
+                    <main>
+                        <div className="auth-content">
+                            <h2>Sign up</h2>
+                            <div className="auth-connections">
+                                <a href=""></a>
+                            </div>
+                        </div>
+                    </main>
                 </section>
                 <form onSubmit={this.handleSubmit}>
                     <div className="signup-form">
