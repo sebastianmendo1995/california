@@ -89,47 +89,90 @@ class SignupForm extends React.Component {
                             <div className="auth-connections">
                                 <a href="">Sign up with Google</a>
                             </div>
+                            <hr className="divider"></hr>
+                            <div className="auth-form signup-form">
+                                <form onSubmit={this.handleSubmit} className='signup' id='new_user'>
+                                    <div className="signup-form">
+                                        <div className="form-field-group">
+                                            <div className="form-field">
+                                                <fielset className="user_phone">
+                                                    <label htmlFor="user_phone">Phone</label>
+                                                    <input type="text"
+                                                        value={this.state.phone}
+                                                        onChange={this.update('phone')}
+                                                        className='text-input'
+                                                        id='user_phone'
+                                                    />
+                                                </fielset>
+                                            </div>
+                                            <div className="form-field">
+                                                <fielset className="user_nationality">
+                                                    <label htmlFor="user_nationality">Nationality</label>
+                                                    <input type="text"
+                                                        value={this.state.nationality}
+                                                        onChange={this.update('nationality')}
+                                                        className='text-input'
+                                                        id='user_nationality'
+                                                    />
+                                                </fielset>
+                                            </div>
+                                        </div>
+                                        <div className="form-field">
+                                            <fieldset className="user_email">
+                                                <label htmlFor="user_email">Email</label>
+                                                <input type="text"
+                                                    value={this.state.email}
+                                                    onChange={this.update('email')}
+                                                    className='text-input'
+                                                    id='user_email'
+                                                />
+                                            </fieldset>
+                                        </div>
+
+                                        <div className="form-field">
+                                            <fieldset className="user_password">
+                                                <label htmlFor="user_password">Password</label>
+                                                <input type="password"
+                                                    value={this.state.password}
+                                                    onChange={this.update('password')}
+                                                    placeholder="6+ characters"
+                                                    className='text-input'
+                                                    id='user_password'
+                                                />
+                                            </fieldset>
+                                        </div>
+                                        <div className="form-field">
+                                            <fieldset className="user_password2">
+                                                <label htmlFor="user_password2">Password</label>
+                                                <input type="password"
+                                                    value={this.state.password2}
+                                                    onChange={this.update('password2')}
+                                                    placeholder="Confirm Password"
+                                                    id='user_password2'
+                                                />
+                                            </fieldset>
+                                        </div>
+
+                                        <div class="form-field check-wrap opt-in">
+                                            <fieldset>
+                                                <input type="checkbox" id="user_agree_to_terms" name="user[agree_to_terms]" />
+                                                <label for="user_agree_to_terms">
+                                                        Creating an account means you’re okay with our
+                                                        <a target="_blank" href="#/terms">Terms of Service</a>,
+                                                        <a target="_blank" href="#/privacy">Privacy Policy</a>, and our default
+                                                        <a target="_blank" href="#/notifications">Notification Settings</a>.
+                                                </label>
+                                            </fieldset>
+                                        </div>
+                                        <div className="form-btns">
+                                            <input type="submit" value="Submit" className='btn form-sub'/>
+                                        </div>
+                                        {this.renderErrors()}
+                                    </div>
+                                </form>
+                            </div>
                         </div>
-                        <hr className="divider"></hr>
-                        <div className="auth-form signup">
-                            <form onSubmit={this.handleSubmit}>
-                                <div className="signup-form">
-                                    <br />
-                                    <input type="text"
-                                        value={this.state.email}
-                                        onChange={this.update('email')}
-                                        placeholder="Email"
-                                    />
-                                    <br />
-                                    <input type="text"
-                                        value={this.state.phone}
-                                        onChange={this.update('phone')}
-                                        placeholder="Phone"
-                                    />
-                                    <br />
-                                    <input type="text"
-                                        value={this.state.nationality}
-                                        onChange={this.update('nationality')}
-                                        placeholder="Nationality"
-                                    />
-                                    <br />
-                                    <input type="password"
-                                        value={this.state.password}
-                                        onChange={this.update('password')}
-                                        placeholder="Password"
-                                    />
-                                    <br />
-                                    <input type="password"
-                                        value={this.state.password2}
-                                        onChange={this.update('password2')}
-                                        placeholder="Confirm Password"
-                                    />
-                                    <br />
-                                    <input type="submit" value="Submit" />
-                                    {this.renderErrors()}
-                                </div>
-                            </form>
-                        </div>
+                        
                     </main>
                 </section>
                 
