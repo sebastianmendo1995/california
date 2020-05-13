@@ -11,12 +11,15 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    border: 0;
+    font-family: inherit;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    line-height: 1;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -46,7 +49,7 @@ a {
     text-decoration: none;
 }
 
-html, body, div{
+html, body{
 	height: 100%;
 }
 
@@ -61,3 +64,16 @@ body {
     display: flex;
     flex-direction: column;
 }
+
+/* @media (min-width: 960px){ */
+	#root {
+		height: 100%;
+		display: flex;
+		flex-direction: row;
+		overflow: hidden;
+	}
+
+	#root>div{
+		width: 100%;
+	}
+/* } */

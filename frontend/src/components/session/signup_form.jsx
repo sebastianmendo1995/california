@@ -143,7 +143,7 @@ class SignupForm extends React.Component {
                                         </div>
                                         <div className="form-field">
                                             <fieldset className="user_password2">
-                                                <label htmlFor="user_password2">Password</label>
+                                                <label htmlFor="user_password2">Confirm Password</label>
                                                 <input type="password"
                                                     value={this.state.password2}
                                                     onChange={this.update('password2')}

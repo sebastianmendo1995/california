@@ -129,9 +129,64 @@ input.text-input {
     margin-right: 8px;
 }
 
-input[type='text'], input[type='search'], input[type='password'], input[type='email'], input[type='url'], input[type='tel'], .selectize-input {
+input {
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    cursor: text;
+    margin: 0em;
+    font: 400 11px system-ui;
+    border-width: 2px;
+}
+
+input[type='text'], input[type='search'], input[type='password'], input[type='email'] {
     border: 1px solid transparent;
 }
+
+input[type='text'], input[type='search'], input[type='password'], input[type='email'] {
+    font-family: 'Balsamiq Sans', cursive, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 10px 16px;
+    outline: none;
+    border-radius: 8px;
+    color: #0d0c22;
+    background-color: #f3f3f4;
+}
+
+input[type='password']{
+    font-size: 20px;
+}
+
+input[type='text']:focus, input[type='search']:focus, input[type='password']:focus, input[type='email']:focus{
+    border-color: rgb(30, 82, 228);
+    background-color: #ffffff;
+    box-shadow: 0 0 20px #89b4d6;
+}
+
+input[type='text']:hover, input[type='search']:hover, input[type='password']:hover, input[type='email']:hover{
+    border-color: rgb(30, 82, 228);
+    background-color: #ffffff;
+    box-shadow: 0 0 20px #89b4d6;
+}
+
+.opt-in label {
+    font: normal 14px/18px "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #6e6d7a;
+    margin: 18px 0 0;
+    position: relative;
+    padding-left: 26px;
+}
+
 
 @media (min-width: 960px) {
     #main-container {
@@ -176,7 +231,6 @@ input[type='text'], input[type='search'], input[type='password'], input[type='em
         flex: 1;
         overflow: auto;
     }
-
     .auth-nav {
         display: flex;
         justify-content: flex-end;
