@@ -95,7 +95,7 @@ class SignupForm extends React.Component {
                                     <div className="signup-form">
                                         <div className="form-field-group">
                                             <div className="form-field">
-                                                <fielset className="user_phone">
+                                                <fieldset className="user_phone">
                                                     <label htmlFor="user_phone">Phone</label>
                                                     <input type="text"
                                                         value={this.state.phone}
@@ -103,10 +103,10 @@ class SignupForm extends React.Component {
                                                         className='text-input'
                                                         id='user_phone'
                                                     />
-                                                </fielset>
+                                                </fieldset>
                                             </div>
                                             <div className="form-field">
-                                                <fielset className="user_nationality">
+                                                <fieldset className="user_nationality">
                                                     <label htmlFor="user_nationality">Nationality</label>
                                                     <input type="text"
                                                         value={this.state.nationality}
@@ -114,7 +114,7 @@ class SignupForm extends React.Component {
                                                         className='text-input'
                                                         id='user_nationality'
                                                     />
-                                                </fielset>
+                                                </fieldset>
                                             </div>
                                         </div>
                                         <div className="form-field">
