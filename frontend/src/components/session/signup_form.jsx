@@ -160,12 +160,12 @@ class SignupForm extends React.Component {
                                                         Creating an account means you’re okay with our
                                                         <a target="_blank" href="#/terms">Terms of Service</a>,
                                                         <a target="_blank" href="#/privacy">Privacy Policy</a>, and our default
-                                                        <a target="_blank" href="#/notifications">Notification Settings</a>.
+                                                        <a target="_blank" href="#/notifications"> Notification Settings</a>.
                                                 </label>
                                             </fieldset>
                                         </div>
                                         <div className="form-btns">
-                                            <input type="submit" value="Submit" className='btn form-sub'/>
+                                            <input type="submit" value="Create Account" className='btn form-sub'/>
                                         </div>
                                         {this.renderErrors()}
                                     </div>
