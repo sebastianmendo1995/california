@@ -22,7 +22,7 @@ header {
 }
 
 .auth-sidebar .artwork .artwork-image {
-    background-image: url('../assets/images/artwork.jpg');
+    background-image: url('../assets/images/artwork.png');
     flex-grow: 1;
     background-repeat: no-repeat;
     background-position: bottom center;
@@ -151,7 +151,6 @@ input[type='text'], input[type='search'], input[type='password'], input[type='em
 input[type='text'], input[type='search'], input[type='password'], input[type='email'] {
     font-family: 'Balsamiq Sans', cursive, Arial, sans-serif;
     font-size: 16px;
-    font-weight: 400;
     line-height: 24px;
     width: 100%;
     box-sizing: border-box;
@@ -164,7 +163,7 @@ input[type='text'], input[type='search'], input[type='password'], input[type='em
 }
 
 input[type='password']{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 input[type='text']:focus, input[type='search']:focus, input[type='password']:focus, input[type='email']:focus{
@@ -213,6 +212,10 @@ input.form-sub {
     text-align: center;
 }
 
+.auth-connections > a > i{
+    margin-right: 10px;
+}
+
 
 @media (min-width: 960px) {
     #main-container {
@@ -222,9 +225,13 @@ input.form-sub {
         overflow: hidden;
     }
     .auth-sidebar {
-        background: #C1DEE9;
         color: rgb(18, 194, 159);
     }
+    
+    .auth-sidebar-content{
+        background-color: #C1DEE9;
+    }
+
     .auth-sidebar header {
         max-width: 100%;
         margin: 0;
@@ -243,6 +250,7 @@ input.form-sub {
         justify-content: flex-end;
         flex-grow: 1;
     }
+
     .auth-sidebar {
         width: 550px;
     }

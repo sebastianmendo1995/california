@@ -79,15 +79,18 @@ class SignupForm extends React.Component {
                 <section className="content">
                     <nav className="auth-nav">
                         <p className="auth-link">
-                            Already a member?
-                            <a href="#/login">Log in</a>
+                            Cuenta con una cuenta?
+                            <a href="#/login"> Inicie Sesion </a>
                         </p>
                     </nav>
                     <main>
                         <div className="auth-content">
-                            <h2>Sign up</h2>
+                            <h2>Registro</h2>
                             <div className="auth-connections">
-                                <a href="">Sign up with Google</a>
+                                <a href="">
+                                    <i class="fab fa-google"></i> 
+                                    Iniciar Sesión con Google
+                                </a>
                             </div>
                             <hr className="divider"></hr>
                             <div className="auth-form signup-form">
@@ -96,7 +99,7 @@ class SignupForm extends React.Component {
                                         <div className="form-field-group">
                                             <div className="form-field">
                                                 <fieldset className="user_phone">
-                                                    <label htmlFor="user_phone">Phone</label>
+                                                    <label htmlFor="user_phone">Teléfono</label>
                                                     <input type="text"
                                                         value={this.state.phone}
                                                         onChange={this.update('phone')}
@@ -107,7 +110,7 @@ class SignupForm extends React.Component {
                                             </div>
                                             <div className="form-field">
                                                 <fieldset className="user_nationality">
-                                                    <label htmlFor="user_nationality">Nationality</label>
+                                                    <label htmlFor="user_nationality">Nacionalidad</label>
                                                     <input type="text"
                                                         value={this.state.nationality}
                                                         onChange={this.update('nationality')}
@@ -131,11 +134,11 @@ class SignupForm extends React.Component {
 
                                         <div className="form-field">
                                             <fieldset className="user_password">
-                                                <label htmlFor="user_password">Password</label>
+                                                <label htmlFor="user_password">Contraseña</label>
                                                 <input type="password"
                                                     value={this.state.password}
                                                     onChange={this.update('password')}
-                                                    placeholder="6+ characters"
+                                                    placeholder="6+ caracteres"
                                                     className='text-input'
                                                     id='user_password'
                                                 />
@@ -143,11 +146,11 @@ class SignupForm extends React.Component {
                                         </div>
                                         <div className="form-field">
                                             <fieldset className="user_password2">
-                                                <label htmlFor="user_password2">Confirm Password</label>
+                                                <label htmlFor="user_password2">Confirmar Contraseña</label>
                                                 <input type="password"
                                                     value={this.state.password2}
                                                     onChange={this.update('password2')}
-                                                    placeholder="Confirm Password"
+                                                    placeholder="Contraseña"
                                                     id='user_password2'
                                                 />
                                             </fieldset>
