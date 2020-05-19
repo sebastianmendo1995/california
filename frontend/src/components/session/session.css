@@ -29,6 +29,10 @@ header {
     background-size: cover;
 }
 
+.auth-sidebar .artwork .artwork-login {
+    background-image: url('../assets/images/artwork2.png');
+}
+
 .auth-sidebar header h1 {
     display: block;
     padding-right: 30px;
@@ -258,6 +262,10 @@ input.form-sub {
     
     .auth-sidebar-content{
         background-color: #C1DEE9;
+    }
+
+    .auth-sidebar-content-login{
+        background-color: #FAD7D6;
     }
 
     .auth-sidebar header {

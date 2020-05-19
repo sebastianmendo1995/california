@@ -20,7 +20,7 @@ class LoginForm extends React.Component {
     // Once the user has been authenticated, redirect to the Tweets page
     componentWillReceiveProps(nextProps) {
         if (nextProps.currentUser === true) {
-            this.props.history.push('/tweets');
+            this.props.history.push('/');
         }
 
         // Set or clear errors
@@ -63,7 +63,7 @@ class LoginForm extends React.Component {
         return (
             <div id="main-container">
                 <section className="auth-sidebar">
-                    <div className="auth-sidebar-content">
+                    <div className="auth-sidebar-content auth-sidebar-content-login">
                         <header>
                             <a href="/" className='logo'>
                                 <img src={logo} alt="" />
@@ -71,7 +71,7 @@ class LoginForm extends React.Component {
                             <h1>Hospedarse en Lima nunca fue tan barato.</h1>
                         </header>
                         <div className="artwork">
-                            <div className="artwork-image"></div>
+                            <div className="artwork-image artwork-login"></div>
                         </div>
                     </div>
                 </section>
