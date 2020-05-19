@@ -87,9 +87,9 @@ class SignupForm extends React.Component {
                         <div className="auth-content">
                             <h2>Registro</h2>
                             <div className="auth-connections">
-                                <a href="">
+                                <a href="" className='form-btn auth-google auth-google-new'>
                                     <i class="fab fa-google"></i> 
-                                    Iniciar Sesión con Google
+                                    Registrarse con Google
                                 </a>
                             </div>
                             <hr className="divider"></hr>
@@ -122,7 +122,7 @@ class SignupForm extends React.Component {
                                         </div>
                                         <div className="form-field">
                                             <fieldset className="user_email">
-                                                <label htmlFor="user_email">Email</label>
+                                                <label htmlFor="user_email">Correo</label>
                                                 <input type="text"
                                                     value={this.state.email}
                                                     onChange={this.update('email')}
@@ -150,7 +150,6 @@ class SignupForm extends React.Component {
                                                 <input type="password"
                                                     value={this.state.password2}
                                                     onChange={this.update('password2')}
-                                                    placeholder="Contraseña"
                                                     id='user_password2'
                                                 />
                                             </fieldset>
@@ -161,14 +160,14 @@ class SignupForm extends React.Component {
                                                 <input type="checkbox" id="user_agree_to_terms" name="user[agree_to_terms]" />
                                                 <label for="user_agree_to_terms">
                                                         Creating an account means you’re okay with our
-                                                        <a target="_blank" href="#/terms">Terms of Service</a>,
-                                                        <a target="_blank" href="#/privacy">Privacy Policy</a>, and our default
+                                                        <a target="_blank" href="#/terms"> Terms of Service</a>,
+                                                        <a target="_blank" href="#/privacy"> Privacy Policy</a>, and our default
                                                         <a target="_blank" href="#/notifications"> Notification Settings</a>.
                                                 </label>
                                             </fieldset>
                                         </div>
                                         <div className="form-btns">
-                                            <input type="submit" value="Create Account" className='btn form-sub'/>
+                                            <input type="submit" value="Crear Cuenta" className='btn form-sub'/>
                                         </div>
                                         {this.renderErrors()}
                                     </div>

@@ -75,6 +75,34 @@ a {
     display: flex;
 }
 
+.auth-connections a.auth-google {
+    flex-grow: 1;
+    position: relative;
+}
+
+a.form-btn.auth-google {
+    background-color: #4285f4;
+    color: #fff;
+}
+
+a.form-btn {
+    display: inline-block;
+    padding: 10px 16px;
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    transition: all 200ms ease;
+    border-radius: 8px;
+    appearance: none;
+    position: relative;
+    outline: none;
+    font-weight: 500;
+    line-height: 20px;
+    height: 40px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
 hr.divider {
     overflow: visible;
     padding: 0;
@@ -167,14 +195,14 @@ input[type='password']{
 }
 
 input[type='text']:focus, input[type='search']:focus, input[type='password']:focus, input[type='email']:focus{
-    border-color: rgb(30, 82, 228);
-    background-color: #ffffff;
+    border-color: rgb(51, 92, 207);
+    background-color: #f3f3f4;
     box-shadow: 0 0 20px #89b4d6;
 }
 
 input[type='text']:hover, input[type='search']:hover, input[type='password']:hover, input[type='email']:hover{
-    border-color: rgb(30, 82, 228);
-    background-color: #ffffff;
+    border-color: rgb(51, 92, 207);
+    background-color: #f3f3f4;
     box-shadow: 0 0 20px #89b4d6;
 }
 
