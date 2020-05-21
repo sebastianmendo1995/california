@@ -132,26 +132,6 @@ class LoginForm extends React.Component {
                 </section>
 
             </div>
-            // <div className='main-container'>
-            //     <form onSubmit={this.handleSubmit}>
-            //         <div>
-            //             <input type="text"
-            //                 value={this.state.email}
-            //                 onChange={this.update('email')}
-            //                 placeholder="Email"
-            //             />
-            //             <br />
-            //             <input type="password"
-            //                 value={this.state.password}
-            //                 onChange={this.update('password')}
-            //                 placeholder="Password"
-            //             />
-            //             <br />
-            //             <input type="submit" value="Submit" />
-            //             {this.renderErrors()}
-            //         </div>
-            //     </form>
-            // </div>
         );
     }
 }

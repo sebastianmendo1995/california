@@ -60,6 +60,16 @@ class SignupForm extends React.Component {
         );
     }
 
+    handleType(type) {
+        return (e) => {
+            if (Number(e.currentTarget.value) || e.currentTarget.value === "") {
+                this.setState({
+                    [type]: e.currentTarget.value
+                })
+            }
+        }
+    }
+
     render() {
         return (
             <div id="main-container">
@@ -102,7 +112,8 @@ class SignupForm extends React.Component {
                                                     <label htmlFor="user_phone">Teléfono</label>
                                                     <input type="text"
                                                         value={this.state.phone}
-                                                        onChange={this.update('phone')}
+                                                        //onChange={this.update('phone')}
+                                                        onChange={this.handleType('phone')}
                                                         className='text-input'
                                                         id='user_phone'
                                                     />
