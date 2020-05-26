@@ -12,17 +12,23 @@ import './assets/stylesheet/reset.css'
 
 const App = () => (
     <div>
+
+        <Route exact path="/errors" component={ErrorPage} /> 
+
         <Switch>
-            <AuthRoute exact path="/login" component={LoginFormContainer} />
             <AuthRoute exact path="/signup" component={SignupFormContainer} />
-            <Route exact path="/errors" component={ErrorPage} /> 
+            <AuthRoute exact path="/login" component={LoginFormContainer} />
             <Route path='/' component={NavBarContainer} />
         </Switch>
 
         <Switch>
             <Route exact path="/" component={MainPage} />
-            <Redirect to='/errors' />
         </Switch>
+
+            
+        {/* <Redirect to='/errors' /> */}
+
+
     </div>
 );
 
