@@ -1,0 +1,13 @@
+#wrap {
+    position: relative;
+    flex: 1 0 auto;
+    background: #fff;
+}
+
+.container-large {
+    background-image: url('../assets/images/main.jpg');
+    /* flex: 1; */
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+}
