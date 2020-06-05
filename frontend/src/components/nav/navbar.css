@@ -23,7 +23,7 @@
 }
 
 #logo>a>img{
-    height: 50px;
+    height: 90px;
 }
 
 .main-nav {
@@ -80,7 +80,8 @@
 
 .btn-logout,
 .btn-signup {
-    background-color: #34CFB1;
+    /* background-color: #34CFB1; */
+    background-color: #C44AD4;
     color: white;
 }
 

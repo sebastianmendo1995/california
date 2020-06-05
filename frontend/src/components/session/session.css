@@ -257,7 +257,12 @@ input.form-sub {
         overflow: hidden;
     }
     .auth-sidebar {
-        color: rgb(18, 194, 159);
+        /* color: rgb(18, 194, 159); */
+        color: #C44AD4;
+    }
+
+    .logo > img {
+        max-height: 150px;
     }
     
     .auth-sidebar-content{

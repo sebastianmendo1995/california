@@ -87,7 +87,7 @@ class LoginForm extends React.Component {
                             <h2>Registro</h2>
                             <div className="auth-connections">
                                 <a href="" className='form-btn auth-google auth-google-new'>
-                                    <i class="fab fa-google"></i>
+                                    <i className="fab fa-google"></i>
                                     Iniciar Sesión con Google
                                 </a>
                             </div>
