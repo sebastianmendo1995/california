@@ -13,7 +13,7 @@ class MainPage extends React.Component {
               <p>Para que gastes tu dinero donde realmente lo necesites</p>
             </div>
             <div className="shot-content">
-              <div className='shot-image'></div>
+              <div className="shot-image"></div>
               <a
                 target="_blank"
                 href="https://www.freepik.com/free-photos-vectors/business"
@@ -22,6 +22,10 @@ class MainPage extends React.Component {
               </a>
             </div>
           </div>
+        </div>
+
+        <div className="top-rooms">
+          
         </div>
       </div>
     );
