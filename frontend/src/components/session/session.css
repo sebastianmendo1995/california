@@ -251,7 +251,7 @@ input.form-sub {
 
 @media (min-width: 960px) {
     #main-container {
-        height: 100%;
+        height: 100vh;
         display: flex;
         flex-direction: row;
         overflow: hidden;

@@ -10,7 +10,7 @@ import "./main.css";
 class MainPage extends React.Component {
   render() {
     return (
-      <div id="wrap">
+      <div id="wrap" >
         <div className="main-page-content">
           <div className="container-large">
             <div className="text-content">
@@ -70,6 +70,24 @@ class MainPage extends React.Component {
                   </li>
                 </ol>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="main-page-content">
+          <div className="container-large">
+            <div className="text-content">
+              <h1>Informacion del Hotel California</h1>
+              <p>
+              Cuenta con estacionamiento privado y habitaciones con amplio confort, preferidas por los clientes.
+
+              Tenemos a su disponibilidad 127 habitaciones, las cuales podrá disfrutar por 6 horas.
+
+              En la mayoría de habitaciones podrás encontrar: Tv, mini bar, música, pole dance, cámara seca, ducha española, jacuzzi, luces, sillones tántricos.
+              
+              Te ofrecemos la oportunidad de escaparte completamente. Ven y disfruta de lo que más te gusta.</p>
+            </div>
+            <div className="shot-content">
+              <div className="shot-image"></div>
             </div>
           </div>
         </div>
