@@ -1,5 +1,10 @@
 import React from "react";
 
+import jacuzzi from '../assets/images/jacuzzi.jpg'
+import simple from '../assets/images/simple.jpg'
+import king from '../assets/images/king.jpg'
+import mirror from '../assets/images/mirror.jpeg'
+
 import "./main.css";
 
 class MainPage extends React.Component {
@@ -7,7 +12,7 @@ class MainPage extends React.Component {
     return (
       <div id="wrap">
         <div className="main-page-content">
-          <div className="container-large signed-out-main">
+          <div className="container-large">
             <div className="text-content">
               <h1>Hospedarse en lima nunca fue tan barato</h1>
               <p>Para que gastes tu dinero donde realmente lo necesites</p>
@@ -23,9 +28,50 @@ class MainPage extends React.Component {
             </div>
           </div>
         </div>
-
-        <div className="top-rooms">
-          
+        <div className="container-rooms">
+          <div className="room-title">
+            <h1>Habitaciones</h1>
+          </div>
+          <div className="inner-wrap">
+            <div id="content">
+              <div id='main' className='main-full'>
+                <ol className="shots-grid dribbles container-fluid">
+                  <li>
+                    <div className="shot-thumbnail-base">
+                      <picture>
+                        <img src={`${jacuzzi}`} alt=""/>
+                      </picture>
+                    </div>
+                    <div className='shot-details-container'></div>
+                  </li>
+                  <li>
+                    <div className="shot-thumbnail-base">
+                      <picture>
+                        <img src={`${simple}`} alt=""/>
+                      </picture>
+                    </div>
+                    <div className='shot-details-container'></div>
+                  </li>
+                  <li>
+                    <div className="shot-thumbnail-base">
+                      <picture>
+                        <img src={`${king}`} alt=""/>
+                      </picture>
+                    </div>
+                    <div className='shot-details-container'></div>
+                  </li>
+                  <li>
+                    <div className="shot-thumbnail-base">
+                      <picture>
+                        <img src={`${mirror}`} alt=""/>
+                      </picture>
+                    </div>
+                    <div className='shot-details-container'></div>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     );
