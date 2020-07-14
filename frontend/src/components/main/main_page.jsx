@@ -4,6 +4,7 @@ import jacuzzi from '../assets/images/jacuzzi.jpg'
 import simple from '../assets/images/simple.jpg'
 import king from '../assets/images/king.jpg'
 import mirror from '../assets/images/mirror.jpeg'
+import building from '../assets/images/building.jpg'
 
 import "./main.css";
 
@@ -29,8 +30,8 @@ class MainPage extends React.Component {
           </div>
         </div>
         <div className="container-rooms">
-          <div className="room-title">
-            <h1>Habitaciones</h1>
+          <div className="sub-title">
+            <h2>Habitaciones</h2>
           </div>
           <div className="inner-wrap">
             <div id="content">
@@ -73,21 +74,28 @@ class MainPage extends React.Component {
             </div>
           </div>
         </div>
-        <div className="main-page-content">
-          <div className="container-large">
-            <div className="text-content">
-              <h1>Informacion del Hotel California</h1>
-              <p>
-              Cuenta con estacionamiento privado y habitaciones con amplio confort, preferidas por los clientes.
+        <div className="information-content">
+          <div className="sub-title">
+            <h2>Información del Hotel</h2>
+          </div>
+          <div className='inner-wrap'>
+            <div id='content'>
+              <div className="container-info">
+                <div className='text-content'>
+                  <p>
+                    Cuenta con estacionamiento privado y habitaciones con amplio confort, preferidas por los clientes.
 
-              Tenemos a su disponibilidad 127 habitaciones, las cuales podrá disfrutar por 6 horas.
+                    Tenemos a su disponibilidad 127 habitaciones, las cuales podrá disfrutar por 6 horas.
 
-              En la mayoría de habitaciones podrás encontrar: Tv, mini bar, música, pole dance, cámara seca, ducha española, jacuzzi, luces, sillones tántricos.
-              
-              Te ofrecemos la oportunidad de escaparte completamente. Ven y disfruta de lo que más te gusta.</p>
-            </div>
-            <div className="shot-content">
-              <div className="shot-image"></div>
+                    En la mayoría de habitaciones podrás encontrar: Tv, mini bar, música, pole dance, cámara seca, ducha española, jacuzzi, luces, sillones tántricos.
+                    
+                    Te ofrecemos la oportunidad de escaparte completamente. Ven y disfruta de lo que más te gusta.
+                  </p>
+                </div>
+                <div className='shot-content'>
+                  <img src={building} alt=""/>
+                </div>
+              </div>
             </div>
           </div>
         </div>
